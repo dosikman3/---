@@ -1,0 +1,17 @@
+matrix = [
+    [1, 2, 3, 4, 5],
+    [6, 7, 8, 9, 0],
+    [9, 8, 7, 6, 5],
+]
+
+rows_cnt = len(matrix)
+cols_cnt = len(matrix[0])
+
+new_matix = [[0] * rows_cnt for _ in range(cols_cnt)]
+def is_prime(number):
+    for i in range(rows_cnt):
+        for j in range(cols_cnt):
+            new_matix[j][i] = matrix[i][j]
+
+for row in new_matix:
+    print(row)
